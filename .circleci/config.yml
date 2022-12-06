@@ -27,9 +27,9 @@ jobs:
     machine:
       image: ubuntu-2004:current
     resource_class: medium
-    - attach_workspace:
-        at: /tmp/workspace
     steps:
+       - attach_workspace:
+          at: /tmp/workspace
        - add_ssh_keys:
           fingerprints:
             - "29:9c:d2:d6:81:8d:e6:52:8d:2e:02:f3:ec:aa:f2:a8"
