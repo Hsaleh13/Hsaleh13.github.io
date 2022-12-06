@@ -36,7 +36,7 @@ jobs:
        - run: 
             name: Move the file
             command:
-              scp -r ~/_site/ circleci@148.100.77.103:"~/site_to_copy"
+              scp ~/_site/ circleci@148.100.77.103:"~/site_to_copy"
        - run:
             name: Deploy Over SSH
             command: |
